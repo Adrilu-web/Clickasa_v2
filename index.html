@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClicKasa</title>
+    <!--iconos de flaticon-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>           
+      <!--Saco el encabezado y agrego un banner con el nombre de la inmobiliaria 
+      <h1>Inmobiliaria ClicKasa</h1>
+      -->
+      <nav>
+        <img src="img/clickcasa.PNG" >
+         <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="cabecera">
+                <h2>Encuentra el hogar de tus sueños</h2>
+                <p>Más de 20 años ayudando a las personas a encontrar su lugar perfecto.</p>   
+            </div>
+        </section>
+        <section id="propiedades" >
+          <div class ="propiedad">
+            <h3>Propiedades</h3>  
+            <div class ="propiedad_contenedor">
+                <div>
+                    <img src="img/casa_moderna4.jpg" alt="Casa de 2 plantas">
+                    <h4>Casa de 2 plantas</h4>
+                    <p>$250.000 - 3 habitaciones, 2 baños, 200 m²</p>
+                    <a href="#" class="propiedad_boton">Ver más</a>
+                </div>
+                <div>
+                    <img src="img/casa_moderna2.jpg" alt="Casa moderna con altillo">
+                    <h4>Casa moderna con altillo</h4>
+                    <p>$180.000 - 2 habitaciones, 1 baño, 100 m²</p>
+                    <a href="#" class="propiedad_boton">Ver más</a>
+              
+                </div>
+                <div>
+                    <img src="img/casa_moderna3.jpg" alt="Casa con parque">
+                    <h4>Casa con parque</h4>
+                    <p>$300,000 - 4 habitaciones, 2 baños, garage, 250 m²</p>
+                    <a href="#" class="propiedad_boton">Ver más</a>
+                </div>
+                <div>
+                    <img src="img/casa_moderna1.jpg" alt="Casa con cancha y pileta">
+                    <h4>Casa con cancha y pileta</h4>
+                    <p>$450.000 - 4 habitaciones, 2 baños, pileta, 180 m²</p>
+                    <a href="#" class="propiedad_boton">Ver más</a>
+                    <!--<a target="_blank" href="http://google.com" class="propiedad_boton">Ver más</a>-->
+
+                </div>
+            </div> 
+            <div class="busqueda">
+                <h3>Busca tu propiedad</h3>
+                <form>
+                    <select id="transaccion" name="transaccion">
+                        <option value="venta">Venta</option>
+                        <option value="alquiler">Alquiler</option>
+                    </select>
+                    <select id="vivienda" name="vivienda">
+                        <option value="casa">Casa</option>
+                        <option value="departamento">Departamento</option>
+                        <option value="lote">Lote</option>
+                    </select>
+                    <input type="text" name= "Ubicacion" placeholder="Ubicación" >
+                    <button class="propiedad_boton" type="submit">Buscar</button>
+                </form>
+            </div>
+          </div>
+        </section>
+        <section id="sobre-nosotros">
+            <h3>Quienes somos</h3>
+            <div class="nosotros">
+                <p>"Nuestra empresa, con dos décadas de experiencia en el sector, se especializa en ayudarte a encontrar el hogar o la inversión ideal. Gracias a nuestro profundo conocimiento del mercado y a un enfoque personalizado, te garantizamos un asesoramiento adaptado a tus necesidades específicas. Contamos con una amplia cartera de propiedades en CABA y ofrecemos servicios adicionales como tasaciones, gestión de alquileres y asesoramiento financiero. Nuestra prioridad es tu satisfacción."</p>
+            </div>
+            <h3>Lo que dicen nuestros clientes</h3>
+            <div class="testimonios">
+                <div class="item1">
+                    <p>"Necesitaba alquilar un piso rápidamente y Inmobiliaria ClicKasa me encontró varias opciones que se ajustaban a mis necesidades y presupuesto. El proceso de alquiler fue muy rápido y sin complicaciones. Estoy muy contenta con el piso que alquilé y con el servicio que recibí.</p>
+                  <p><b>-Ana Gutiérrez-</b></p> 
+                </div>
+                <div class="item1">
+                    <p>"Tenía una propiedad que quería vender lo antes posible y gracias a Inmobiliaria ClicKasa  lo conseguí. Encontraron al comprador ideal en muy poco tiempo y me acompañaron durante todo el proceso de venta. Estoy muy agradecido por su profesionalidad y eficiencia</p>
+                    <p><b>-Julio Valiente-</b></p> 
+                </div>
+                <div class="item1">
+                    <p>"Nunca pensé que comprar mi primera casa fuera tan fácil. Gracias a Inmobiliaria ClicKasa, encontré el hogar perfecto para mí. Me mostraron varias opciones hasta que encontré la indicada. ¡Recomiendo totalmente sus servicios!"</p>
+                    <p><b>-Javier Carbajal-</b></p>
+                </div>
+                <div class="item1">
+                    <p>"Gracias a Inmobiliaria ClicKasa, encontré la casa perfecta para mi familia. ¡Servicio excelente!"</p>
+                   <p> <b>-Romina Salustre-</b></p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+          <h3>Contacto</h3>
+          <div class="contacto_flex">
+            <div class="formulario">
+                <form id="mi_formulario"
+                    action="https://formspree.io/f/xovqqjeo"
+                    method="POST"
+                    >
+                    <label for="nombre"></label>
+                    <input type="text" name="Nombre"  placeholder="Nombre"  id="nombre" size="30" required>
+                    <label for="apellido"></label>
+                    <input type="text" name="Apellido" placeholder="Apellido" id="apellido" size="30" required>
+                    <label for="telefono"></label>
+                    <input type="tel" name="Telefono" placeholder="Nro. Teléfono" id="telefono" size="30" required>
+                    <label for="mail"></label>
+                    <input type="email" id="mail"  placeholder="Email" size="30" required>            
+                    <label>
+                    <textarea name="message"  placeholder="Escribinos tu consulta aquí" rows="6" cols="30" required></textarea><br>
+                    </label>
+                    <button class="propiedad_boton" type="submit">Enviar </button> 
+                    <button class="propiedad_boton" type="reset">Limpiar</button>
+                </form>
+            </div>
+            <div class="mapa">
+               <!-- Saco titulo <h3>Nuestra Ubicación</h3>-->            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6644264034085!2d-58.459272988804294!3d-34.56205095518599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3849d6dbb%3A0x34a17e7f13a06d16!2sAv.%20Cabildo%20%26%20Av.%20Juramento%2C%20C1428%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1730847633207!5m2!1ses!2sar" width="auto" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+    </main>
+ 
+
+    <footer>
+        <div class="footer_grid">
+            <div class="footer_item1">
+                &copy; ClicKasa. Todos los derechos reservados.
+            </div>
+            <div class="footer_item2">
+                Contacto
+            </div>
+            <div class="footer_item3">
+               Seguinos
+            </div>
+            <div class="footer_item4">
+                Tel: 4823-1235
+            </div>
+            <div class="footer_item5">
+                <a href="#"><i class="fi fi-brands-whatsapp"></i></a>
+                <a href="#"><i class="fi fi-brands-instagram"></i></a>
+                <a href="#"><i class="fi fi-brands-twitter"  ></i></a>
+                <a href="#"><i class="fi fi-brands-linkedin" ></i></a>
+            </div>
+        </div>   
+    </footer>
+    <!-- Activo limpieza de valores del formulario con js--> 
+    <script>
+        document.getElementById("mi_formulario").reset();
+    </script>
+    <script>
+        document.getElementById("my_form").reset();
+      </script>
+</body>
+</html>

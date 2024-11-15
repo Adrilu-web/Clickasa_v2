@@ -1,0 +1,289 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* ---- Definir paleta de colores ---- */
+:root{
+    --blanco: #ffffff;
+    --naranja: #E55812;
+    --verde_claro:#c6e2cb;
+    --fondo: #ecf0f1; 
+    --verde_intermedio: #2A4D14;
+    --azul: #0B3C49;
+}
+
+body {
+    font-family:Kanit, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: var(--fondo);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+}
+/* ---- Estilos para titulos---- */
+h1, h2 {
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--blanco);
+}
+
+h3 {
+    font-size: 2rem;
+    padding-bottom:1.5%
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+/*---- Estilos para el header , listas ---- */
+header, footer {
+    background: linear-gradient(90deg, rgba(66,103,86,1) 50%, rgba(0,255,205,1) 100%);
+    padding: 1%;
+    background-size: 200%;
+    animation: BgGradient 5s ease infinite;
+}
+
+    /* ---- Activar el destello de color de fondo ---- */
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+li {
+    display: inline; 
+    margin: 2.5%;
+}
+
+a {
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+    /*---- Activar la manito del cursor de los links y cambiar color */
+nav a:hover {
+    color: var(--naranja);
+}
+
+button {
+
+    margin: 1%  ;
+    font-family: Kanit, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+}
+
+/* ---- Estilos para la seccion cabecera ---- */
+.cabecera {
+    background-image: url('../img/cabecera.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    border: 20px solid var(--fondo);
+    padding: 15%;
+}
+
+.cabecera p {
+    font-size: 1.3rem;
+    color: var(--blanco);
+  }
+
+/* ---- Estilos para la sección de propiedades ---- */
+.propiedad {
+    padding: 2% 2%;
+}
+.propiedad_contenedor {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.propiedad_contenedor div {
+    background-color: var(--verde_claro);
+    width: 300px;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.propiedad img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.propiedad p {
+    margin-bottom: 3%;
+    font-size: 1rem;
+}
+
+.propiedad_boton {
+    background-color: var(--verde_intermedio);
+    color: var(--blanco);
+    border-radius: 5px;
+    border: none;
+    padding: 1%;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    transition: all .5s ease;
+}
+
+
+/* ---- Estilos para el formulario de busqueda ---- */
+.busqueda {
+    padding-top: 2% ;
+}
+.busqueda form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 1.5%
+}
+.busqueda select, .busqueda input {
+    padding: 1%;
+    font-size: 1rem;
+    margin: 10px;
+    border: 2px solid var(--verde_claro);
+    border-radius: 5px;
+    width: 200px;
+    font-family: Kanit, Geneva, Tahoma, sans-serif; 
+}
+
+
+    /*---- Activar la manito del cursor del boton y cambiar color */
+.propiedad_boton:hover {
+    background-color:var(--azul);
+    cursor: pointer;
+}
+
+/* ---- Estilos para la sección nosotros, clases testimonio y nosotros ---- */
+
+.testimonios {
+    padding: 0% 1%;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.item1{
+    margin:1%;
+    padding:1%;
+    border: 2px solid var(--verde_claro);
+    border-radius: 4px;
+}
+.testimonios, .nosotros {
+    font-size: 1.2rem;
+    font-style: italic;
+
+}
+.nosotros p {
+    padding: 1% 2%;
+}
+/* ---- Estilos para la sección contacto: formulario y mapa ---- */
+#contacto{
+    padding-top: 1%;
+}
+.contacto_flex{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;   
+    justify-content: center;
+    gap: 5px;
+}
+.contacto_flex div{
+    flex: 1
+}
+
+/* ---- Formulario de contacto ---- */
+.formulario input, .formulario textarea  {
+    width: 80%; 
+    padding: 1%;
+    font-size: 1rem;
+    margin: 1%;
+    border: 2px solid var(--verde_claro);
+    border-radius: 5px;
+    font-family:Kanit, Geneva, Tahoma, sans-serif; 
+}
+/* ---- Estilos para el mapa ---- */
+.mapa iframe {
+    width: 80%;
+    height: 85%;
+    border: 2px solid var(--verde_claro);
+    border-radius: 8px;
+}
+/* ---- Footer ---- */
+footer {
+    padding: 1.5%;
+    color: var(--blanco);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+    'item1 item2 item3'
+    'item1 item4 item5';
+    grid-gap: 1%;
+ }
+ .footer_item1 {
+    grid-area: item1;
+    align-content: center;
+  }
+  .footer_item2 {
+    grid-area: item2;
+  }
+  .footer_item3 {
+    grid-area: item3;
+  }
+  .footer_item4 {
+    grid-area: item4;
+  }
+  .footer_item5 {
+    grid-area: item5;
+  }
+footer a {
+    padding:1.5% ;
+
+}
+
+/* ---- Activar media queries ---- */
+@media (width< 720px) {
+    body {
+        font-family: Roboto, Geneva, Tahoma, sans-serif;
+    }   
+    .footer_grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        'item1'
+        'item2'
+        'item4'
+        'item3'
+        'item5';
+        grid-gap: 1%;
+     }
+
+     .contacto_flex{
+        flex-direction: column;
+        justify-content: center;
+ 
+    }
+    .busqueda form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonios, .nosotros {
+        font-size: 1rem;
+    }
+}
