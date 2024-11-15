@@ -163,20 +163,43 @@ button {
 }
 
 /* ---- Estilos para la sección nosotros, clases testimonio y nosotros ---- */
-
+/*
 .testimonios {
     padding: 0% 1%;
     display: grid;
     grid-template-columns: auto auto;
 
 }
+*/
+.testimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'itema1 itema2'
+    'itema3 itema4';
+ }
 
-.item1{
+.itema{
     margin:1%;
     padding:1%;
     border: 2px solid var(--verde_claro);
     border-radius: 4px;
 }
+
+.itema1 {
+    grid-area: itema1;
+}
+.itema2 {
+    grid-area: itema2;
+}
+.itema3 {
+    grid-area: itema3;
+}
+.itema4 {
+    grid-area: itema4;
+}
+
+
 .testimonios, .nosotros {
     font-size: 1.1rem;
     font-style: italic;
@@ -272,6 +295,16 @@ footer a {
         'item5';
         grid-gap: 1%;
      }
+
+     .testimonios {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        'itema1'
+        'itema2'
+        'itema3' 
+        'itema4';
+     }
      .contacto_flex{
         flex-direction: column;
         justify-content: center;
@@ -280,11 +313,12 @@ footer a {
         flex-direction: column;
         align-items: center;
     }
-    .testimonios, .nosotros {
-        font-size: 1rem;
+    .testimonios, .nosotros, footer {
+        font-size: 0.8rem;
     }
     
 }
+/*
 @media (width<= 360px) {
   
     .testimonios, .nosotros, footer {
