@@ -256,7 +256,8 @@ footer a {
 }
 
 /* ---- Activar media queries ---- */
-@media (width< 720px) {
+@media (width<= 720px) 
+{
     body {
         font-family: Roboto, Geneva, Tahoma, sans-serif;
     } 
@@ -279,12 +280,15 @@ footer a {
         flex-direction: column;
         align-items: center;
     }
-
+    .testimonios, .nosotros {
+        font-size: 1rem;
+    }
     
 }
-@media (width< 360px) {
+@media (width<= 360px) {
   
-    .testimonios, .nosotros {
+    .testimonios, .nosotros, footer {
         font-size: 0.8rem;
+    
        }
-    }  
+ }  
