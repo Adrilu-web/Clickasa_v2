@@ -178,7 +178,7 @@ button {
     border-radius: 4px;
 }
 .testimonios, .nosotros {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-style: italic;
 
 }
@@ -223,7 +223,6 @@ footer {
     padding: 1.5%;
     color: var(--blanco);
     border-radius: 8px;
-    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -260,7 +259,7 @@ footer a {
 @media (width< 720px) {
     body {
         font-family: Roboto, Geneva, Tahoma, sans-serif;
-    }   
+    } 
     .footer_grid {
         display: grid;
         grid-template-columns: 1fr ;
@@ -272,18 +271,20 @@ footer a {
         'item5';
         grid-gap: 1%;
      }
-
      .contacto_flex{
         flex-direction: column;
         justify-content: center;
- 
-    }
+     }
     .busqueda form {
         flex-direction: column;
         align-items: center;
     }
 
-    .testimonios, .nosotros {
-        font-size: 1rem;
-    }
+    
 }
+@media (width< 360px) {
+  
+    .testimonios, .nosotros {
+        font-size: 0.8rem;
+       }
+    }  
