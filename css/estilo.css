@@ -155,10 +155,12 @@ button {
     font-family: Kanit, Geneva, Tahoma, sans-serif; 
 }
 
-
+::placeholder{
+    color:#000000
+}
     /*---- Activar la manito del cursor del boton y cambiar color */
 .propiedad_boton:hover {
-    background-color:var(--azul);
+    background-color:var(--naranja);
     cursor: pointer;
 }
 
@@ -177,10 +179,12 @@ button {
     grid-template-areas: 
     'itema1 itema2'
     'itema3 itema4';
+    grid-gap: 1%;
+    margin: 1%;
  }
 
 .itema{
-    margin:1%;
+    margin:1.5%;
     padding:1%;
     border: 2px solid var(--verde_claro);
     border-radius: 4px;
@@ -206,7 +210,7 @@ button {
 
 }
 .nosotros p {
-    padding: 1% 2%;
+    padding: 1% 2.5%;
 }
 /* ---- Estilos para la sección contacto: formulario y mapa ---- */
 #contacto{
@@ -274,9 +278,15 @@ footer {
     grid-area: item5;
   }
 footer a {
-    padding:1.5% ;
-
+    padding:1% 2%;
+    background-color: var(--naranja);
+    margin:1%;
 }
+footer a:hover {
+    background-color:var(--azul);
+}
+
+
 
 /* ---- Activar media queries ---- */
 @media (width<= 720px) 
@@ -316,7 +326,9 @@ footer a {
     .testimonios, .nosotros, footer {
         font-size: 0.8rem;
     }
-    
+    footer a {
+        padding:0.5% 1%;
+    }
 }
 /*
 @media (width<= 360px) {
