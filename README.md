@@ -7,6 +7,8 @@
 ** Se activan los cursores ** <br>
 ** En footer: Se agregan iconos desde flaticon cdn ** <br>
 ** Se agrega la categoria de colores con root y var() ** <br>
-** Falta activar los CTA en propiedades** <br>
+** Las propiedades se extraen de un archivo JSON** <br>
+** Al presionar el botón Ver Mas en cada propiedad, se visualiza el detalle de la propiedad - Se puede visualizar las imagenes de cada propiedad con un scroll** <br>
+** Con el botón Agregar a favoritos, se guardan cada propiedad en LocalStorae y también se pueden eliminar de la lista de favoritos<br>
 ** Falta activar los CTA en la busqueda de propiedades** <br>
-** Falta crear una pagina para que se vean las propiedades obtenidas en el CTA ** <br>
+** Falta activar el botón NAV ** <br>
