@@ -1,11 +1,12 @@
 [
     {
         "id": 1,
-        "titulo": "Casa - Oliden al 6900",
+        "operacion": "Venta",
+        "tipo_inmueble": "Casa",
+        "direccion": "Oliden al 6900",
         "precio": 900000,
         "descripcion_corta": "1064m² - 5 ambientes",
         "img": "img/casa1.jpg",
-        "altimg": "Casa - Oliden al 6900",
         "descripcion_larga": "Casa de 5 ambientes en Liniers, Capital Federal<br>Propiedad en dos plantas. Planta baja: Living comedor en desnivel de 10x13mts. Comedor diario de 3x3mts- Cocina independiente de 4.5x2.5mts y acceso a lavadero cubierto - patio cubierto 8x11mts con parrilla. Cochera con portón automática. Jardín libre de 15x30 con pileta de material y gimnasio o sector de uso múltiples cubierto de 6x13mts.<br>Primer planta: Hall de distribución 6x2.5 mts con toilette, dormitorio al frente 5.5x3mts con ante baño y baño. Dormitorio al contra frente de 5x4mts<br>Segunda planta: Dormitorio principal al frente 4x4.5mts con vestidor, ante baño y baño separados.",
         "img1":"img/casa11.jpg",
         "img2":"img/casa12.jpeg",
@@ -17,11 +18,12 @@
 
     {
         "id": 2,
-        "titulo": "Casa - Av. Varela al 400",
+        "operacion": "Venta",
+        "tipo_inmueble": "Casa",
+        "direccion": "Av. Varela al 400",
         "precio": 800000,
         "descripcion_corta":"350m² - 5 ambientes",
         "img": "img/casa2.jpg" ,
-        "altimg":  "Casa - Av. Varela al 400",
         "descripcion_larga":"Casa 5 AMBIENTES en Flores, Capital Federal <br>Magnifica propiedad en dos plantas. <br>Planta baja: amplio living comedor, cocina con desayunador, dos toilette de recepción, garage , patio vidriado, quincho con parrilla y cocina industrial, patio descubierto,pileta de natación climatizada. <br>En la planta alta: dormitorio principal en suite con hidromasaje,vestidor y balcón.<br>En el segundo dormitorio en suite con baño circular y vestidor.<br>En el tercer dormitorio también en suite con vestidor, y el cuarto dormitorio con placard todos con pisos de parquet.",
         "img1":"img/casa21.jpg",
         "img2":"img/casa22.jpg",
@@ -32,11 +34,12 @@
 
     {
         "id": 3,
-        "titulo": "Casa - Cosquin al 1000",
+        "operacion": "Venta",
+        "tipo_inmueble": "Casa",
+        "direccion": "Cosquin al 1000",
         "precio": 550000,
         "descripcion_corta":"210m² - 4 ambientes",
         "img": "img/casa3.jpg" ,
-        "altimg": "Casa - Cosquin al 1000",
         "descripcion_larga":"Casa chalet 4 AMBIENTES en Mataderos, Capital Federal.<br>Es una casa en esquina sobre un lote de 10.77 x 18.01. La misma cuenta con un garaje para dos autos, un living comedor amplio, cocina comedor diario con muebles sobre y bajo mesada con lavadero, 3 dormitorios, uno de ellos con vestidor, 2 baños completos, un patio con quincho",
         "img1":"img/casa31.jpg",
         "img2":"img/casa32.jpg",
@@ -47,11 +50,12 @@
 
     {
         "id": 4,
-        "titulo": "Casa - Av. Directorio al 1100",
+        "operacion": "Venta",
+        "tipo_inmueble": "Casa",
+        "direccion": "Av. Directorio al 1100",
         "precio": 620000,
         "descripcion_corta": "400m² - 5 ambientes²",
         "img": "img/casa4.jpg" ,
-        "altimg": "Casa - Av. Directorio al 1100",
         "descripcion_larga":"Casa 5 AMBIENTES en Mataderos -Capital Federal<br>La propiedad esta dividida en tres plantas<br>Planta baja con cuarto de herramientas, lavadero, garaje, quincho con parrilla, baño completo y jardín con jacuzzi. <br>Primera planta:living comedor en desnivel, tolilette de recepción, cocina comedor. <br>Segunda planta: dormitorio principal en suite, baño completo en hall de distribución ,tres dormitorios con placard. <br>Tercera planta: playroom con dos vestidores y balcón aterrazado.",
         "img1":"img/casa41.jpeg" ,
         "img2":"img/casa42.jpeg",

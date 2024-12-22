@@ -41,6 +41,7 @@ h4 {
     font-size: 1.2rem;
 }
 
+
 /*---- Estilos para el header , listas ---- */
 header, footer {
     background: linear-gradient(90deg, rgba(66,103,86,1) 50%, rgba(0,255,205,1) 100%);
@@ -65,6 +66,7 @@ a {
     color: var(--blanco);
     font-weight: bold;
     font-size: 1.2rem;
+   
 }
     /*---- Activar la manito del cursor de los links y cambiar color */
 nav a:hover {
@@ -162,13 +164,13 @@ button:hover {
     transform: scale(1.05);
    }
 
-.propiedad_card p {
-    margin-bottom: 3%;
+.propiedad_card p, .favoritos_card p {
+    margin-bottom: 1%;
     font-size: 1rem;
 }
 
 .favoritos_card {
-    background-color: var(--blanco);
+    background-color: var(--verde_claro);
     border: 2px solid var(--azul);
 }
 
