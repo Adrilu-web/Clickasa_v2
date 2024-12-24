@@ -30,17 +30,19 @@ h1, h2 {
     font-size: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--blanco);
+    font-weight: bold;
 }
 
 h3 {
     font-size: 2rem;
+    font-weight: bold;
     /* padding-bottom:1.5% */
 }
 
 h4 {
     font-size: 1.2rem;
+    font-weight: bold;
 }
-
 
 /*---- Estilos para el header , listas ---- */
 header, footer {
@@ -57,22 +59,32 @@ header, footer {
     100% {background-position: 0% 50%;}
 }
 
-li {
-    display: inline; 
-    margin: 2.5%;
+/*---- Modificacion de estilos de Bootstrap */
+.container-fluid {
+    width: 100%;
+    margin-left: 0;
 }
 
-a {
-    color: var(--blanco);
+.text-white {
     font-weight: bold;
     font-size: 1.2rem;
-   
-}
-    /*---- Activar la manito del cursor de los links y cambiar color */
-nav a:hover {
-    color: var(--naranja);
 }
 
+.navbar-toggler {
+    border-radius: 2px;
+    border: var(--blanco) solid 2px;
+} 
+
+ .navbar-toggler .navbar-toggler-icon {
+    font-size: 1.2rem; 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+
+.navbar{
+    text-align:left ;
+}
+
+/* ---- Estilos para los botones ---- */
 button {
     margin: 1%  ;
     font-family: Kanit, Geneva, Tahoma, sans-serif; 
@@ -108,9 +120,7 @@ button:hover {
   }
 
 /* ---- Estilos para el formulario de busqueda ---- */
-/* .busqueda {
-    padding-top: 1% ;
-} */
+
 .busqueda form {
     display: flex;
     justify-content: center;
@@ -249,7 +259,6 @@ button:hover {
 /* ---- Footer ---- */
 footer {
     color: var(--blanco);
-    border-radius: 8px;
     font-weight: bold;
 }
 
@@ -284,6 +293,8 @@ footer a {
     background-color: var(--naranja);
     margin:1%;
     border-radius: 50%;
+    color: var(--blanco);
+    font-weight: bold;
 }
 
 footer a:hover {

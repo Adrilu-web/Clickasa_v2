@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data.forEach((inmueble, indice) => {
                 card.innerHTML += `
                 <div class="propiedad_card">
-                    <img src="${inmueble.img}" alt=${inmueble.direccion}" width=300 height="200">
+                    <img src="${inmueble.img}" alt=${inmueble.direccion}">
                     <h4>${inmueble.operacion} - ${inmueble.tipo_inmueble}</h4>
                     <p>${inmueble.direccion}</p> 
                     <p>Precio: ${inmueble.precio.toLocaleString("en-CA", {style:"currency", currency:"USD"})}<br>   

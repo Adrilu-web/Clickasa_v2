@@ -6,22 +6,39 @@
     <title>ClicKasa</title>
     <!--configuracion-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.ico"type="image/x-icon">
 </head>
 <body>
-    <header>           
-          
-      <nav>
-        <img src="img/clickcasa.PNG" width= "285" alt="Logo de la Empresa" >
-         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#propiedades">Propiedades</a></li>
-            <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/clickcasa.PNG" alt="Logo de la Empresa" width="285">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#propiedades">Propiedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#sobre_nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
     <main>
         <section id="inicio">
@@ -100,7 +117,7 @@
                     <label for="mail"></label>
                     <input type="email" id="mail"  placeholder="Email" size="30" required>            
                     <label>
-                    <textarea name="message"  placeholder="Escribinos tu consulta aquí" rows="6" cols="30" required></textarea><br>
+                    <textarea name="message"  placeholder="Escribinos tu consulta aquí" rows="6" cols="70" required></textarea><br>
                     </label>
                     <button class="propiedad_boton" type="submit">Enviar </button> 
                     <button class="propiedad_boton" type="reset">Limpiar</button>
@@ -134,10 +151,11 @@
                 <a target='_blank' href="https://instagram.com/"><i class="fi-brands-instagram"></i></a>
                 <a target='_blank' href="https://x.com/?lang=es"><i class="fi-brands-twitter" ></i></a>
                 <a target='_blank' href="https://www.linkedin.com/"><i class="fi-brands-linkedin" ></i></a>
+                
             </div>
         </div>   
     </footer>
     <script src="js/script.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
